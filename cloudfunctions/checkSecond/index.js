@@ -24,10 +24,10 @@ exports.main = async (event, context) => {
   const get_user = event.get_user
   const bill_id = event.bill_id
   const waterPoints = event.waterPoints
-  const bill_doc_id = evnet.bill_doc_id
+  const bill_doc_id = event.bill_doc_id
 
-  const getUserDoc = await getUser(get_user)
-  const publishUserDoc = await getUser(publish_user)
+  const getUserDoc = await getUsers(get_user)
+  const publishUserDoc = await getUsers(publish_user)
   const getUserDocId = getUserDoc.data[0]._id
   const publishUserDocId = publishUserDoc.data[0]._id
   // 新的接收订单和发布订单的数组

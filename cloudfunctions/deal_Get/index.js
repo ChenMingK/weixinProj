@@ -10,12 +10,14 @@ const cloud = require('wx-server-sdk')
 cloud.init({ env: 'test-ae626c' })
 const db = cloud.database();
 const _ = db.command;
-const wxContext = cloud.getWXContext()
+let _openId
 // 云函数入口函数
 exports.main = async (event, context) => {
   //参数赋值到本地
   const bill_id = event.bill_id; 
   const username = event.username
+  const wxContext = cloud.getWXContext()
+  _openId = wxContext.OPENID
   let userData = await getUserData()
   let billData = await getBillData(bill_id) // 注意传参
   return Promise.all([
@@ -28,7 +30,7 @@ exports.main = async (event, context) => {
 // 根据_openid找到user
 function getUserData() {
   return db.collection('users').where({
-    _openid: wxContext.OPENID
+    _openid: _openId
   }).get()
 }
 // 操作user

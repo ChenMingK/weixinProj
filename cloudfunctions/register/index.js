@@ -15,7 +15,6 @@ exports.main = async (event, context) => {
       waterPoints: 0,
       avatarUrl: avatarUrl,
       _openid: wxContext.OPENID,
-      appid: wxContext.APPID,
       hasSigned: false,
       hasLotteryed: false
     }

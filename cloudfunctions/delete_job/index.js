@@ -8,11 +8,13 @@ const cloud = require('wx-server-sdk')
 cloud.init({ env: 'test-ae626c' })
 const db = cloud.database();
 const _ = db.command;
-const wxContext = cloud.getWXContext()
+let _openid
 // 云函数入口函数
 exports.main = async (event, context) => {
   const deleteBillId = event.deleteBillId
   const deleteDocId = event.deleteDocId     // bills表中要删除的记录的_id
+  const wxContext = cloud.getWXContext()
+  _openid = wxContext.OPENID
   let docArray = await getDocByOpenid()
   let docId = docArray.data[0]._id           // 只能通过doc的id来更新?
   let newReleasedBills = docArray.data[0].released_bills
@@ -26,7 +28,7 @@ exports.main = async (event, context) => {
 
 function getDocByOpenid() {
   return db.collection('users').where({
-    _openid: wxContext.OPENID
+    _openid: _openid
   }).get()
 }
 

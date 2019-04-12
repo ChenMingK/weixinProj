@@ -5,10 +5,12 @@ const cloud = require('wx-server-sdk')
 cloud.init({ env: 'test-ae626c' })
 const db = cloud.database();
 const _ = db.command;
-const wxContext = cloud.getWXContext();
+let _openid
 // 云函数入口函数 
 exports.main = async (event, context) => {
   let doc = await getIdArray();
+  const wxContext = cloud.getWXContext()
+  _openid = wxContext.OPENID
   // 未注册的用户点击个人主页
   if(doc.data.length === 0 || doc.data[0].released_bills == undefined){
     return {
@@ -31,7 +33,7 @@ exports.main = async (event, context) => {
 
 function getIdArray(){
   return db.collection('users').where({
-    _openid: wxContext.OPENID
+    _openid: _openid
   }).get()
 }
 
