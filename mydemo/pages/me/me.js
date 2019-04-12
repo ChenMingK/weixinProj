@@ -85,7 +85,7 @@ Page({
 
   lottery: function () {
     if (this.data.hasLotteryed === true) return;
-    wx.navigateTo({
+    wx.redirecTo({
       url: '/pages/lottery/lottery',
     })
   }

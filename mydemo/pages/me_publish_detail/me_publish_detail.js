@@ -35,6 +35,12 @@ Page({
   },
 
   deleteBill() {
+    // onProcessing 和 onChecked状态都不允许删除
+    if (this.item.state === 'onProcessing' || 'onReceived') {
+      wx.showToast({
+        title: '已有用户接单，无法删除'
+      })
+    }
     let _this = this
     let targetBillId = this.data.item.bill_id
     let targetDocId = this.data.item._id
@@ -80,7 +86,7 @@ Page({
         bill_doc_id: targetDocId,
         waterPoints: waterPoints
       },
-      sucess: res => {
+      success: res => {
         wx.showToast({
           title: '确认订单成功',
         })
@@ -92,6 +98,7 @@ Page({
       },
       fail: err => {
         // console.log(err)
+        console.log(err)
       }
     })
   }
