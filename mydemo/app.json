@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/release_jobs/release_jobs",
+    "pages/lottery/lottery",
+    "pages/telephone/telephone",
+    "pages/detail/detail",
+    "pages/me_publish/me_publish",
+    "pages/me_receive/me_receive",
+    "pages/me_publish_detail/me_publish_detail",
+    "pages/me_receive_detail/me_receive_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#019FDE",
+    "navigationBarTitleText": "时间银行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#2C2C2C",
+    "selectedColor": "#1296DB",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_active.png"
+      },
+      {
+        "pagePath": "pages/release_jobs/release_jobs",
+        "text": "发单",
+        "iconPath": "images/release_jobs.png",
+        "selectedIconPath": "images/release_jobs_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_active.png"
+      }
+    ]
+  }
+}

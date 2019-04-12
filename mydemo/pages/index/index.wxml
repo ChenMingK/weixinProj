@@ -1,0 +1,56 @@
+<view class='container'>
+  <view class="search_field">
+    <text>搜索</text>
+    <view class='image-wrapper'>
+      <image src= '/images/arrow_right.png'></image>
+    </view>
+    <view class='search_container'>
+      <input placeholder="请输入关键字" maxlength="80" value="{{searchValue}}"
+      bindinput="bindSearchInput"></input>
+      <image src="/images/home/search.png" bindtap="search"></image>
+    </view>
+  </view><!--搜索end-->
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="true" 
+  circular="true" vertical="{{vertical}}" interval="3000"       
+  duration="500" class='box swiper1 '>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+  </swiper>  <!--swiper1  end--> 
+  <view class="bottom-container">
+      <view class="bottom-top">
+          <image src="/images/home/logo.png"></image>
+          <text class='text-logo'>发布中的订单</text>
+      </view>
+      <view class='items'>
+      <block wx:for-items="{{items}}" wx:key="{{index}}">
+        <view class="item" bindtap='toDetail' data-index='{{index}}'>
+          <view class='item_left'>
+            <image src= "{{item.avatarUrl}}"></image>
+          </view>
+          <view class='item_right'>
+            <view class="item_top">
+              <view>{{item.publish_user}}</view>
+              <view>{{item.publishDate}}</view>
+            </view> <!--item_top end 发布人 & 日期-->
+            
+            <view class="item_middle">
+              <view class="type">{{item.tags[3]}}</view>
+              <view class="remark">{{item.remark}}</view>
+            </view> <!--item_bottom end 内容 -->
+
+            <view class='item_bottom'>
+                <view>
+                  <image src='/images/home/water.png'></image>
+                  {{item.waterPoints}}
+                </view>
+            </view> 
+          </view>
+        </view><!--flex item end-->
+      </block>
+      </view>
+  </view>
+</view>

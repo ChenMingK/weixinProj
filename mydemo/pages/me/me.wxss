@@ -1,0 +1,65 @@
+/* pages/me/me.wxss */
+.container{
+  color: black;
+  /* font-weight: 700; */
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60rpx;
+  font-weight: bold;
+}
+
+.userinfo-avatar{
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+
+.top_text {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.top_left{
+  margin-right: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 30rpx;
+}
+
+
+.top_right{
+  margin-left: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 30rpx;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+.item {
+  display: flex;
+  color: black;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #DDD; 
+  font-size: 36rpx;
+}
+.blank
+{
+  color: white;
+}
+
+

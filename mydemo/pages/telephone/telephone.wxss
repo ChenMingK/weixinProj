@@ -1,0 +1,140 @@
+/* pages/telephone/telephone.wxss */
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+ /* margin: 20rpx;*/
+  border-radius: 50%;
+}
+
+.topbutton{
+  width: 200rpx;
+  margin-top: 50rpx;
+}
+
+.container{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo-avatar {
+  
+  width: 150rpx;
+  height: 150rpx;
+ /* margin: 20rpx;*/
+}
+.top_text {
+  color: #aaa;
+}
+
+.register-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  margin-top: 20rpx;
+}
+/* telephone here */
+.register-wrapper .telephone-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+}
+.register-wrapper .telephone-wrapper .telephone-text-wrapper {
+  flex: 0 0 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+.register-wrapper .telephone-wrapper .telephone-number-wrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+.register-wrapper .telephone-wrapper .send-btn-wrapper {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+}
+/* send-btn */
+.register-wrapper .telephone-wrapper .send-btn-wrapper button{
+  background: rgba(135, 206, 235, .3);
+  box-shadow: 6rpx 6rpx 6rpx 0 rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  line-height: 70rpx;
+}
+/* confirm here */
+.register-wrapper .confirm-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+}
+.register-wrapper .confirm-wrapper .confirm-text-wrapper {
+  flex: 0 0 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+
+.register-wrapper .confirm-wrapper .confirm-number-wrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+.register-wrapper .confirm-wrapper .count-down-wrapper {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+}
+/* button */
+.register-wrapper .confirm-wrapper .count-down-wrapper button{
+  background: rgba(135, 206, 235, .3);
+  box-shadow: 6rpx 6rpx 6rpx 0 rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  line-height: 70rpx;
+}
+.register-wrapper .check-btn-wrapper {
+  width: 300rpx;
+  position: absolute;
+  right: 50%;
+  bottom: 50rpx;
+  margin-right: -150rpx;
+}
+.register-wrapper .check-btn-wrapper button{
+  background: rgba(135, 206, 235, .3);
+  box-shadow: 6rpx 6rpx 6rpx 0 rgba(0, 0, 0, .2);
+}
+
+/* 未授权时的按钮 */
+.please {
+  
+}
+

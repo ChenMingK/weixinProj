@@ -1,0 +1,145 @@
+.container{
+  background-color: #eeeeee;
+}
+.search_field{
+  height: 80rpx;
+  background-color: rgb(0, 100, 255);
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.search_field text {
+  flex: 0 0 15%;
+  margin-left: 40rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+}
+.image-wrapper {
+  flex: 0 0 10%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.search_field image{
+  width: 38rpx;
+  height: 38rpx;
+}
+.search_container{
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 80rpx;
+  border-radius: 30rpx;
+}
+.search_field image{
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 10rpx;
+}
+
+.swiper1{
+  height: 300rpx;
+  background-color: white;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.swiper1 swiper-item{
+  border-radius: 150rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+/* 下面是接单及搜索的样式 */
+.bottom-container{
+  background-color: white;
+}
+.bottom-top{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #222222;
+  font-weight: 500;
+  padding-left: 5rpx;
+  border-bottom: 1rpx solid #eeeeee;
+} 
+.bottom-top image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottom-top text{
+  margin-left: 10rpx;
+  margin-top: -10rpx;
+}
+.item{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 15rpx;
+  border: 1rpx solid #eeeeee;
+  border-bottom: 5rpx solid #eeeeee;
+}
+.item_left{
+  width: 180rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+  padding: 10rpx;
+}
+.item_left image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.item_right{
+  width: 100%;
+  height: 150rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item_right view{
+  margin-bottom: 10rpx;
+}
+.item_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight:bold;
+  font-size: 30rpx;
+}
+.item_middle{
+  color: rgb(110, 110, 110);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 90%;
+}
+.type{
+  width: 200rpx;
+}
+.item_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #019fa0;
+}
+.item_bottom image{
+  width: 30rpx;
+  height: 30rpx;
+}

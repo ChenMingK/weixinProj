@@ -1,0 +1,41 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class='top_left' bindtap='signToday'>
+      <image src='{{signURL}}' style='width:100rpx;height:100rpx'></image>
+      <text>签到</text>
+    </view>  <!--top_left end-->
+      <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+    <view class='top_right' bindtap='lottery'>
+      <image src='{{lotteryURL}}' style='width:100rpx;height:100rpx'>
+      </image>
+      <text>抽奖</text>
+    </view>
+  </view><!--user_info end-->
+  <view class='top_text'>
+    <open-data class="userinfo-nickname" type="userNickName"></open-data>
+  </view><!--top_text end-->
+
+  <view class="item" >
+    <text>个人信息</text>
+  </view>
+  <view class="item"  >
+    <text>设置</text>
+  </view>
+  <view class='item'>
+    <text>水滴数:{{waterPoints}}</text>
+  </view>
+
+  <!-- 这里可以和上面一样跳转到其他页面 -->
+  <view class='item' bindtap='click1'>  
+    <view class='item-top' bindtap='click1'><text>我发布的任务</text></view>
+      <view class="blank">aaaaaaaaaaaaaaaaaaaa</view>
+     <icon class="iconfont icon-youjiantou"></icon>
+  </view> 
+
+  <view class='item' bindtap='click2'>  
+    <view class='item-top'><text>我接受的任务</text></view>
+    <view class="blank">aaaaaaaaaaaaaaaaaaaa</view>
+     <icon class="iconfont icon-youjiantou"></icon>
+  </view> 
+</view>

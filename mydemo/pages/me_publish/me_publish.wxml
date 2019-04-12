@@ -1,0 +1,9 @@
+<block wx:for-items="{{released_task_items}}" wx:key="{{index}}">
+  <view class='list-wrapper'>
+    <view >截止时间： {{item.publishDate}}</view>
+    <view >地点： {{item.tags[1]}}</view>
+    <view >类型： {{item.tags[3]}}</view>
+    <button class="details" bindtap='gotoDetail' data-index='{{index}}'>详  情</button>
+  </view>
+</block>
+

@@ -1,0 +1,118 @@
+page
+{
+  background:  rgba(74, 87, 92, 0.137);
+}
+
+.totle1
+{
+  margin-top: 50rpx;
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 40rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.totle11
+{
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 15rpx;
+}
+
+.totle12
+{
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  padding-right: 20rpx;
+  word-break: break-all;
+}
+
+/* button1
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  background-color: rgba(140, 195, 231, 0.5); 
+  width: 70%;
+  position: center;
+  font-size: 35rpx;
+  height: 85rpx;
+} */
+.show {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  background-color: rgba(140, 195, 231, 0.5); 
+  width: 70%;
+  position: center;
+  font-size: 35rpx;
+  height: 85rpx;
+}
+.hide {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  background-color: rgba(140, 195, 231, 0.5); 
+  width: 70%;
+  position: center;
+  font-size: 35rpx;
+  height: 85rpx;
+  background: #ccc;
+}
+.hide image, .show image {
+  width: 38rpx;
+  height: 38rpx;
+}
+.blank
+{
+  color: rgba(140, 195, 231, 0.164);
+}
+
+.totle2
+{
+  margin-left: 10%;
+  margin-top: 80rpx;
+  border-radius: 60rpx;
+  background-color: white;
+  padding-top: 20rpx;
+  display: flex;
+  width: 40%;
+ 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.totle21{
+  padding-left: 38rpx;
+  width: 200rpx;
+  height: 200rpx;
+ 
+}
+
+.totle22{
+ display: flex;
+  justify-content: center;
+  padding-bottom: 20rpx;
+}
+
+.totle3
+{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.totle4
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-button-wrapper {
+  display: flex;
+  justify-content: center;
+}

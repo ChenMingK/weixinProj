@@ -1,0 +1,38 @@
+<view class="totle1">
+  <view class="totle11">截止时间: {{item.tags[2]}}</view>
+  <view class="totle12">地点: {{item.tags[1]}}</view>
+  <view class="totle12">类型: {{item.tags[3]}}</view>
+</view> 
+
+<view class="totle1">
+  <view class="totle11">主要内容:</view>
+  <view class="totle12"> {{item.content}}</view>
+</view> 
+
+
+
+<view class="totle4">
+
+<view class="totle2">
+  <image  class="totle21" src='../../images/home/water.png'></image>
+  <text class="totle22">奖励水滴：{{item.waterPoints}}</text>
+</view>
+
+<view class="totle3">
+
+<view class='delete-button-wrapper' bindtap="deleteBill">
+      <icon class="iconfont icon-shanchu"></icon>
+      <view>删除订单</view>
+ </view>
+
+ <button class='{{confirmButtonClass}}' bindtap='confirmBill'
+         disabled='{{enableButton}}'> 
+  <view class='image-wrapper'><image src='/images/confirm.png'></image></view>
+  <text>确认订单</text>
+</button>
+
+
+
+</view>
+
+</view>

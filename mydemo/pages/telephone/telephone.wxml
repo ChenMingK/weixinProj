@@ -1,0 +1,43 @@
+<view class='container'>
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" 
+        bindgetuserinfo="getUserInfo" class='topbutton'> 微信授权
+</button>
+<block wx:else>
+<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+</block>
+<view class='top_text'>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+</view>
+
+<view class='register-wrapper'>
+  <view class='telephone-wrapper'>
+    <view class='telephone-text-wrapper'>
+      <text>手机号:</text>
+    </view>
+    <view class='telephone-number-wrapper'>
+      <input type='text' placeholder='请输入手机号' 
+             bindinput='setTelephoneNumber' value='{{telephoneNumber}}'></input>
+    </view>
+    <view class='send-btn-wrapper'>
+      <button bindtap='send' class="{{hasUserInfo === true ? 'send' : 'please'}}"
+              disabled="{{hasUserInfo === true ? false : true}}">   
+      {{hasUserInfo === true ? sendText : '请先注册'}}</button>
+    </view>
+  </view>
+  <view class='confirm-wrapper'>
+    <view class='confirm-text-wrapper'>
+      <text>验证码:</text>
+    </view>
+    <view class='confirm-number-wrapper'>
+      <input type='text' placeholder='请输入验证码' bindinput='setCheckNumber'
+      value='{{checkNumber}}'></input>
+    </view>
+    <view class='count-down-wrapper'>
+      <button>{{timeCount}}</button>
+    </view>
+  </view>
+  <view class='check-btn-wrapper'>
+    <button bindtap='check'>点击注册</button>
+  </view>
+</view>

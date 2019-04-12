@@ -1,0 +1,17 @@
+.list-wrapper
+{
+  border-bottom: 2rpx solid #c8c7cc;
+  height:220rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+} 
+
+.details
+{
+  margin-left: 580rpx;
+  width: 130rpx;
+  height: 60rpx;
+  background: rgba(1, 159, 222, 0.74);
+  border-radius: 10rpx;
+  font-size: 25rpx;
+}

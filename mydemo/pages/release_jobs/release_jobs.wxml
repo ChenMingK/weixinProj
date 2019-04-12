@@ -1,0 +1,77 @@
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class='topic'><text>订单内容</text></view>
+    <view class='textarea-wrapper'>
+      <textarea placeholder = '请详细描述工作内容' 
+                auto-focus value='{{content}}' name="content">
+      </textarea>
+    </view>
+  </view>
+
+  <view class="section section-extra">
+    <view class='topic'><text>备注</text></view>
+    <view class='textarea-wrapper'>
+    <textarea placeholder = '请概括工作内容，限8个字' auto-height="true" value='{{extra}}' maxlength='8' name="extra"/>
+    </view>
+  </view>
+
+  <!--标签选择-->
+  <view class="section">
+    <view class='topic'><text>基本信息</text></view>
+
+    <view class='picker_container'>
+      <view class="picker__title">学校</view>
+      <picker bindchange="bindCollegeChange" value="{{index}}" range="{{collegeArray}}" >
+        <view class="picker">
+          <view>{{collegeArray[index]}}</view>
+          <image src= '/images/arrow_grey.png'></image>
+        </view>
+      </picker><!--学校picker end-->
+    </view><!--picker_container end-->
+
+      <view class='picker_container'>
+        <view class="picker__title">截止日期</view>
+        <picker mode="date" value="{{date}}" start="2019-03-19" end="2020-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            <view>{{date}}</view>
+            <image src= '/images/arrow_grey.png'></image>
+          </view>
+        </picker><!--日期pciker end-->
+      </view><!--picker_container end-->
+
+      <view class='picker_container'>
+        <view class="picker__title">截止时间</view>
+        <picker mode="time" value="{{time}}" start="09:01" end="22:01" bindchange="bindTimeChange">
+          <view class="picker">
+            <view>{{time}}</view>
+            <image src= '/images/arrow_grey.png'></image>
+          </view>
+        </picker><!--日期picker end-->
+      </view><!--picker_container end-->
+
+      <view class='picker_container'>
+        <view class="picker__title">类型</view>
+        <picker bindchange="bindTypeChange" value="{{typeIndex}}" range="{{typeArray}}" >
+          <view class="picker">
+            <view>{{typeArray[typeIndex]}}</view>
+            <image src= '/images/arrow_grey.png'></image>
+          </view>
+        </picker><!--学校picker end-->
+      </view><!--picker_container end-->
+      <view class='slider_container'>
+        <view class='pay'>报酬</view>
+        <view class='slider'>
+          <slider show-value backgroundColor='rgb(135,206,235)' 
+            block-color='rgb(135,206,235)' block-size='15rpx' 
+            activeColor='rgb(30,144,255)' name="slider" 
+            bindchange="bindSliderChange" max="{{maxWaterPoints}}">
+          </slider>
+        </view>
+      </view>
+  </view>
+
+  <button formType="submit" class='button1'>发 布</button>
+  <button formType="reset" class='button2'>清 空</button>
+  </form>
+</view>

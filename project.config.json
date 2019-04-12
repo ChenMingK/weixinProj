@@ -1,0 +1,64 @@
+{
+	"miniprogramRoot": "mydemo/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"appid": "wxccb2bf023528ffad",
+	"projectname": "demo",
+	"libVersion": "2.2.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "短信",
+					"pathName": "pages/telephone/telephone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布详情页",
+					"pathName": "pages/me_publish/me_publish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "接单详情页",
+					"pathName": "pages/me_receive/me_receive",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

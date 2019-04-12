@@ -1,0 +1,19 @@
+<view class="totle1">
+  <view class="totle11">截止时间: {{item.tags[2]}}</view>
+  <view class="totle12">地点: {{item.tags[1]}}</view>
+  <view class="totle12">类型: {{item.tags[3]}}</view>
+  <view class="totle12">发帖人: {{item.publish_user}}</view>
+</view> 
+
+<view class="totle1">
+  <view class="totle11">主要内容:</view>
+  <view class="totle12"> {{item.content}}</view>
+</view> 
+
+<button class='button1' bindtap='confirmBill' disabled='{{enableButton}}'> 
+  <icon class="icon" type="success_no_circle"  size="70rpx" style="margin-top:10rpx"></icon>
+  <view class="blank"></view>
+  <view>{{enableButton === true ? '等待对方确认' : '待确认'}}</view><!--true:禁用按钮-->
+</button>
+
+

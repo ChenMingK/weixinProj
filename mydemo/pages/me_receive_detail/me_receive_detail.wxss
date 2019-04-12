@@ -1,0 +1,57 @@
+page
+{
+  background:  rgba(74, 87, 92, 0.137);
+}
+
+.totle1
+{
+  margin-top: 50rpx;
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 40rpx;
+  /* background: linear-gradient(to bottom right, rgba(36, 45, 49, 0.281), rgba(66, 66, 87, 0.021) ); */
+  /* background: linear-gradient(to bottom right, rgba(20, 158, 218, 0.637), rgba(20, 159, 218, 0)); */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.totle11
+{
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 15rpx;
+}
+
+.totle12
+{
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  padding-right: 20rpx;
+  word-break: break-all;
+}
+
+.button1
+{
+  
+ display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  background-color: rgba(140, 195, 231, 0.5); 
+  width: 50%;
+  position: center;
+  font-size: 35rpx;
+  height: 85rpx;
+  
+}
+
+.blank
+{
+  /* color: white(1, 159, 222, 0.658); */
+  color: rgba(140, 195, 231, 0.164);
+}
+
+.icon
+{
+  color: bla
+}
